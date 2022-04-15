@@ -1,10 +1,8 @@
 name: Staging deployment
 
 on: 
-  push:
-    branches: [main]
   pull_request:
-    branches: [main]
+    types: [labeled]
 jobs:
   build:
     runs-on: ubuntu:latest
